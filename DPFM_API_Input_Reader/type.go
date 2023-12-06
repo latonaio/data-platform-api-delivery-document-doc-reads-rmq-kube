@@ -17,7 +17,7 @@ type SDC struct {
 }
 
 type HeaderDoc struct {
-	DeliveryDocument		 *int	`json:"DeliveryDocument"`
+	DeliveryDocument         *int    `json:"DeliveryDocument"`
 	DocType                  *string `json:"DocType"`
 	DocVersionID             *int    `json:"DocVersionID"`
 	DocID                    *string `json:"DocID"`
@@ -29,8 +29,8 @@ type HeaderDoc struct {
 }
 
 type ItemDoc struct {
-	DeliveryDocument		 *int	 `json:"DeliveryDocument"`
-	DeliveryDocumentItem     *int	 `json:"DeliveryDocumentItem"`
+	DeliveryDocument         *int    `json:"DeliveryDocument"`
+	DeliveryDocumentItem     *int    `json:"DeliveryDocumentItem"`
 	DocType                  *string `json:"DocType"`
 	DocVersionID             *int    `json:"DocVersionID"`
 	DocID                    *string `json:"DocID"`
@@ -38,5 +38,4 @@ type ItemDoc struct {
 	FileName                 *string `json:"FileName"`
 	FilePath                 *string `json:"FilePath"`
 	DocIssuerBusinessPartner *int    `json:"DocIssuerBusinessPartner"`
-	ItemDoc                  ItemDoc `json:"ItemDoc"`
 }
